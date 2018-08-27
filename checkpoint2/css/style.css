@@ -1,0 +1,111 @@
+body{
+  background-color: maroon;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: grey;
+}
+
+h2{
+  font-weight: 400;
+}
+
+.main{
+  display: grid;
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 3em;
+  margin: 3em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "box1 box1 box2"
+    "box1 box1 box2"
+    "box4 box5 box3"
+    "box4 box5 box6"
+}
+
+.box1{
+  grid-area: box1;
+}
+
+.box2{
+  grid-area: box2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: darkred;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.bioheader{
+  font-size: 2em;
+  text-align: center;
+}
+
+.biop{
+  font-size: 1.3em;
+}
+
+.box3{
+  grid-area: box3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: darkred;
+  padding: 15px;
+  margin-left: 20px;
+  border: 1px solid black;
+}
+
+.skillsheader{
+  font-size: 2em;
+  text-align: center;
+}
+
+.box4{
+  grid-area: box4;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  text-align: center;
+  background-color: darkred;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.pf1header{
+  font-size: 1.5em;
+}
+
+.pf1article{
+  margin: 20px;
+}
+
+.box5{
+  grid-area: box5;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  text-align: center;
+  background-color: darkred;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.pf2header{
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.pf2article{
+  margin: 20px;
+}
+
+.box6{
+  grid-area: box6;
+  background-color: darkred;
+  padding: 15px;
+  border: 1px solid black;
+}
