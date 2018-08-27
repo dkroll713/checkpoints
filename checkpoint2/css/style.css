@@ -8,10 +8,6 @@ a{
   color: grey;
 }
 
-h2{
-  font-weight: 400;
-}
-
 .main{
   display: grid;
   grid-auto-rows: minmax(150px, auto);
@@ -27,6 +23,29 @@ h2{
 
 .box1{
   grid-area: box1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: darkred;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.paragraph{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.introHeader{
+  text-align: center;
+  font-size: 4em;
+}
+
+.introp{
+  text-align: center;
+  font-size: 3em;
 }
 
 .box2{
@@ -77,6 +96,7 @@ h2{
 
 .pf1header{
   font-size: 1.5em;
+  font-weight: bolder;
 }
 
 .pf1article{
@@ -109,3 +129,41 @@ h2{
   padding: 15px;
   border: 1px solid black;
 }
+
+.contactHeader{
+  text-align: center;
+  font-size: 2em;
+}
+
+@media (max-width: 768px){
+  .main{
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 3em;
+    margin: 3em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "box1 box1"
+      "box2 box2"
+      "box3 box3"
+      "box4 box5"
+      "box6 box6"
+    }
+}
+
+@media (max-width: 576px){
+  .main{
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 2em;
+    margin: 2em;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+    }
+  }
