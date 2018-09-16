@@ -1,0 +1,57 @@
+body{
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+h3{
+  text-align: center;
+}
+
+#container1{
+  height: 100%;
+  width: 35%;
+  margin: 10%;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container2{
+  height: 100%;
+  width: 25%;
+
+}
+
+#powerups{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+button{
+  width: 35%;
+}
+
+#container3{
+  height: 100%;
+  width: 50%;
+}
+
+#powerInfo{
+  display: flex;
+  flex-direction: column;
+  text-indent: 5em;
+  margin: 3px;
+  padding: 5px;
+}
+
+#container4{
+  height: 100%;
+  width: 25%;
+}
