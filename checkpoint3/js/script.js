@@ -1,7 +1,9 @@
 "use strict";
 
 $(document).ready(function(){
-  $("#pu1").on("click", function({
-    $("#count1").t
-  }))
+  $(this).on("click", function(){
+    var $counter1 = $("#count1");
+    console.log($($counter1).text());
+    $($counter1).text() == ($($counter1).text() + 1);
+  })
 })
