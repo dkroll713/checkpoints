@@ -1,5 +1,5 @@
 body{
-  background-color: pink;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -15,27 +15,77 @@ h3{
   height: 100%;
   width: 35%;
   margin: 10%;
-  background-color: grey;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+img{
+  height: 100px;
+  width: 100px;
+}
+
 #container2{
   height: 100%;
   width: 25%;
+  margin-top: 3%;
+  margin-right: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box4"
+    "box5 box6"
+    "box7 box8"
+    "box9 box10"
+}
 
+#pu1{
+  grid-area: box1;
+}
+
+#count1{
+  grid-area: box2;
+}
+
+#pu2{
+  grid-area: box3;
+}
+
+#count2{
+  grid-area: box3;
+}
+
+#pu3{
+  grid-area: box5;
+}
+
+#count3{
+  grid-area: box6;
+}
+
+#pu4{
+  grid-area: box7;
+}
+
+#count4{
+  grid-area: box8;
+}
+
+#pu5{
+  grid-area: box9;
+}
+
+#count5{
+  grid-area: box10;
 }
 
 #powerups{
   display: flex;
   flex-direction: column;
-  text-align: left;
-}
-
-button{
-  width: 35%;
+  text-align: center;
 }
 
 #container3{

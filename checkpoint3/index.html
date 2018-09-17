@@ -4,12 +4,11 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
-  <script src="./js/script.js"></script>
 </head>
 
 <body>
   <container id="container1">
-    <img src="" alt="clicker" />
+    <img src="./img/wheel of time.png" alt="clicker" id="img" />
     <h3>Rotations</h3>
     <p id="rotations">
       0
@@ -18,11 +17,26 @@
   <container id="container2">
     <h3>Power Ups</h3>
     <section class="info" id="powerups">
-      <button>Extra Hand</button>
-      <button>Extra Strength</button>
-      <button>Another Person</button>
-      <button>Superhuman Strength</button>
-      <button>Instant Win!</button>
+      <button type="button" id="pu1">Extra Hand</button>
+      <p id="count1" value="0">
+        0
+      </p>
+      <button type="button" id="pu2">Extra Strength</button>
+      <p id="count2" value="0">
+        0
+      </p>
+      <button type="button" id="pu3">Another Person</button>
+      <p id="count3" value="0">
+        0
+      </p>
+      <button type="button" id="pu4">Superhuman Strength</button>
+      <p id="count4" value="0">
+        0
+      </p>
+      <button type="button" id="pu5">Instant Win!</button>
+      <p id="count5" value="0">
+        0
+      </p>
     </section>
   </container>
   <container id="container3">
@@ -47,6 +61,15 @@
   </container>
   <container id="container4">
     <h3>About</h3>
+    <p>
+      In this clicker game you spin the wheel of time.
+      It's really arduous so there are powerups. If you reach
+      a high enough clicker level, you can stop the wheel. <br /> <br />
+      Can you outlast the wheel of time?
+    </p>
   </container>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script> -->
+  <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
